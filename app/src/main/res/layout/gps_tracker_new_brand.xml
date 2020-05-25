@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    tools:context="com.example.seven.gpstracker.gpsTrackerNewBrand">
+
+    <EditText
+        android:id="@+id/txtNewBrand"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/new_brand"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_above="@+id/txtNewModel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp" />
+
+    <EditText
+        android:id="@+id/txtNewModel"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/new_model"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="70dp"
+        android:layout_above="@+id/txtNewCommandName"
+        android:layout_alignLeft="@+id/txtNewBrand"
+        android:layout_alignStart="@+id/txtNewBrand"
+        android:layout_marginBottom="25dp" />
+
+    <EditText
+        android:id="@+id/txtNewCommandName"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/command_name"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="125dp"
+        android:layout_marginBottom="26dp"
+        android:layout_above="@+id/txtAddNewCommand"
+        android:layout_alignLeft="@+id/txtNewModel"
+        android:layout_alignStart="@+id/txtNewModel" />
+
+    <EditText
+        android:id="@+id/txtAddNewCommand"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/add_command"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="179dp"
+        android:layout_marginBottom="58dp"
+        android:layout_above="@+id/btnAdd2List"
+        android:layout_alignLeft="@+id/txtNewCommandName"
+        android:layout_alignStart="@+id/txtNewCommandName" />
+
+    <Button
+        android:id="@+id/btnAdd2List"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_list"
+        tools:layout_editor_absoluteX="263dp"
+        tools:layout_editor_absoluteY="231dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/txtAddNewCommand"
+        android:layout_alignEnd="@+id/txtAddNewCommand"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnAddAllListed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_all_list"
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="289dp"
+        android:layout_below="@+id/txtAddNewCommand"
+        android:layout_alignLeft="@+id/txtAddNewCommand"
+        android:layout_alignStart="@+id/txtAddNewCommand" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/gpsbackground2"
+        tools:ignore="ContentDescription"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

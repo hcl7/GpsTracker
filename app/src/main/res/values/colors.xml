@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="text_color">#180436</color>
+    <color name="textbox_color">#000000</color>
+    <color name="bg_listview">#909090</color>
+    <color name="bg_crash">#FF0000</color>
+    <color name="bg_overspeed">#8A2BE2</color>
+    <color name="bg_carOn">#228B22</color>
+    <color name="bg_carOff">#FF8C00</color>
+    <color name="bg_sos">#FFFF00</color>
+    <color name="bgcolor">#FFFFFF</color>
+    <color name="bg_long_click">#FF3FB596</color>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gps_tracker_user_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.seven.gpstracker.GpsTrackerUserRegister">
+
+
+    <TextView
+        android:id="@+id/lblusrreg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        android:text="User Registration"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblusrreg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Email"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/txtuserpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtemail"
+        android:layout_alignStart="@+id/txtemail"
+        android:layout_below="@+id/txtemail"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/txtuserpassconfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtuserpass"
+        android:layout_alignStart="@+id/txtuserpass"
+        android:layout_below="@+id/txtuserpass"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtuserpassconfirm"
+        android:layout_alignRight="@+id/txtuserpassconfirm"
+        android:layout_below="@+id/txtuserpassconfirm"
+        android:layout_marginTop="37dp"
+        android:text="Register"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/gpsbackground2" />
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    tools:context="com.example.seven.gpstracker.gpsTrackerAdd">
+
+    <EditText
+        android:id="@+id/txtTrackName"
+        android:layout_width="352dp"
+        android:layout_height="54dp"
+        android:layout_above="@+id/spbrand"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:hint="@string/track_name"
+        android:inputType="text"
+        android:textAlignment="center"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Spinner
+        android:id="@+id/spbrand"
+        android:layout_width="352dp"
+        android:layout_height="54dp"
+        android:layout_above="@+id/spmodel"
+        android:layout_alignLeft="@+id/txtTrackName"
+        android:layout_alignStart="@+id/txtTrackName"
+        android:layout_marginBottom="19dp"
+        android:hint="Brand"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="82dp" />
+
+    <Spinner
+        android:id="@+id/spmodel"
+        android:layout_width="352dp"
+        android:layout_height="54dp"
+        android:layout_above="@+id/txtPhoneNumber"
+        android:layout_alignLeft="@+id/spbrand"
+        android:layout_alignStart="@+id/spbrand"
+        android:layout_marginBottom="25dp"
+        android:spinnerMode="dropdown"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="148dp" />
+
+    <EditText
+        android:id="@+id/txtPhoneNumber"
+        android:layout_width="352dp"
+        android:layout_height="54dp"
+        android:layout_above="@+id/txtpass"
+        android:layout_alignLeft="@+id/spmodel"
+        android:layout_alignStart="@+id/spmodel"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="@string/phone_number"
+        android:inputType="number"
+        android:textAlignment="center"
+        tools:ignore="MissingConstraints,TextFields"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="213dp" />
+
+    <EditText
+        android:id="@+id/txtpass"
+        android:layout_width="352dp"
+        android:layout_height="54dp"
+        android:layout_above="@+id/btnAddList"
+        android:layout_alignLeft="@+id/txtPhoneNumber"
+        android:layout_alignStart="@+id/txtPhoneNumber"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:textAlignment="center"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="279dp" />
+
+    <Button
+        android:id="@+id/btnAddList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtpass"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/txtpass"
+        android:layout_marginBottom="50dp"
+        android:text="@string/add_list"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="263dp"
+        tools:layout_editor_absoluteY="346dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtTrackName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        app:srcCompat="@drawable/gpsbackground2"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

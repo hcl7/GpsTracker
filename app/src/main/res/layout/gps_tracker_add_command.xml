@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    tools:context="com.example.seven.gpstracker.gpsTrackerAddCommand">
+
+    <EditText
+        android:id="@+id/txtCommandName"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:hint="@string/command_name"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/txtCommand"
+        android:layout_alignStart="@+id/txtCommand"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/txtCommand"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/command"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="71dp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/txtCommandName"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnAddCommand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_command"
+        tools:layout_editor_absoluteY="126dp"
+        tools:layout_editor_absoluteX="241dp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/txtCommand"
+        android:layout_alignRight="@+id/txtCommand"
+        android:layout_alignEnd="@+id/txtCommand" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAddCommand"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        app:srcCompat="@drawable/gpsbackground2" />
+
+
+</RelativeLayout>
