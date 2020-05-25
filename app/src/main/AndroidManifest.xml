@@ -66,7 +66,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDtBdO4dxcS7MEiYMdfAlOTK9doAC6ucGU" />
+            android:value="API_KEY" />
 
         <activity
             android:name=".gps_tracker_view_map"
